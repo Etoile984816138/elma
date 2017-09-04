@@ -1,7 +1,11 @@
 var path = require('path')
 var config = require('../config')
 var utils = require('./utils')
-var projectRoot = path.resolve(__dirname, '../')
+// var projectRoot = path.resolve(__dirname, '../')
+
+function resolve (dir) {
+  return path.join(__dirname, '..', dir)
+}
 
 module.exports = {
     entry: {
